@@ -1,0 +1,21 @@
+body{
+    background: linear-gradient(rgb(88, 17, 12),rgb(178,136,132));
+}
+
+
+.card{
+    border: 25px;
+    border-style:groove;
+    border-color: rgb(100, 40, 40);
+    padding: 5%;
+    margin: 5%;
+    background: linear-gradient(rgb(184, 101, 87));
+}
+
+.tag{
+    margin-top: 4%;
+    
+    margin-left: 25%;
+    width: 50%;
+
+}
