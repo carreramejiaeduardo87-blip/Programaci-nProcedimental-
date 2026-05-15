@@ -1,0 +1,33 @@
+body{
+    background: linear-gradient(rgb(56, 56, 56),rgb(0, 0, 0));
+    color: rgb(241, 16, 16);
+}
+ .box{
+    margin: 70px;
+    background-color: rgb(67, 80, 80);
+    border-color: rgb(238, 0, 0);
+    border-width: 7px;
+ }
+
+ .label{
+    text-align: center;
+    color: black
+
+ }
+
+button{
+    border-style: groove;
+    border-radius: 50px;
+    border-width: 7px;
+    text-align: center;
+    border-color: rgb(0, 0, 0);
+    color: black;
+
+}
+
+input.input{
+    border-width: 5px;
+    border-style:ridge;
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
