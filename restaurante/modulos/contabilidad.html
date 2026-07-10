@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" />
-    <link rel="stylesheet" href="/css/contabilidad.css">
+    <link rel="stylesheet" href="../../restaurante/css/contabilidad.css">
     <title>contabilidad</title>
 </head>
 
@@ -18,14 +18,14 @@
                     <div class="field">
                         <label class="label">ingresos</label>
                         <div class="control">
-                            <input class="input" type="number" placeholder="cuant?">
+                            <input class="input" type="number" placeholder="cuant?" id="ingresos">
                         </div>
                     </div>
 
                     <div class="field">
                         <label class="label">egresos</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input class="input is-success" type="number" placeholder="cuant?" value="arroz">
+                            <input class="input is-success" type="number" placeholder="cuant?" value="arroz" id="egresos">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-user"></i>
                             </span>
@@ -39,7 +39,7 @@
                     <div class="field">
                         <label class="label">concepto</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input class="input is-success" type="text" placeholder="explica" value="0000">
+                            <input class="input is-success" type="text" placeholder="explica" id="concepto">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-envelope"></i>
                             </span>
@@ -53,7 +53,7 @@
                     <div class="field">
                         <label class="label">fechas</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input class="input is-success" type="date" placeholder="fecha" value="arroz quemado">
+                            <input class="input is-success" type="date" placeholder="fecha" value="arroz quemado" id="fechas">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-user"></i>
                             </span>
@@ -83,10 +83,30 @@
                         </a>
                     </div>
                 </nav>
+                <div class="field">
+                        <label class="label">valor</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input is-success" type="number" placeholder="cuant?" value="arroz" id="valor">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </div>
+                        <p class="help is-success">nume invalido</p>
+                        
+                    </div>
                  <a href="/Programaci-nProcedimental-/restaurante/index.html"><button class="button">volver al inicio</button></a>
+                 <button class="button" id="guardar">guardar</button>
             </div>
+            
         </article>
+
     </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/contabilidad.js"></script>
 </body>
 
 </html>
