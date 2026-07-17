@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" />
     <link rel="stylesheet" href="../../restaurante/css/pedidos.css">
+    <script src="../../restaurante/js/pedido.js"></script>
+    
     <title>pedidos</title>
 </head>
 
@@ -18,14 +20,26 @@
                     <div class="field">
                         <label class="label">producto</label>
                         <div class="control">
-                            <input class="input" type="text" placeholder="cuant?">
+                            <input id="producto" class="input" type="text" placeholder="cuant?">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">codigo producto</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input  id="cod_producto" class="input is-success" type="number" placeholder="codigo" value="">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
                         </div>
                     </div>
 
                     <div class="field">
                         <label class="label">direccion</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input class="input is-success" type="text" placeholder="direccion" value="">
+                            <input id="direccion" class="input is-success" type="text" placeholder="direccion" value="">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-user"></i>
                             </span>
@@ -39,7 +53,7 @@
                     <div class="field">
                         <label class="label">nombre de usuario</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input class="input is-success" type="text" placeholder="alfredo.10" value="******">
+                            <input id="name_usuario" class="input is-success" type="text" placeholder="alfredo.10" value="******">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-envelope"></i>
                             </span>
@@ -53,7 +67,7 @@
                     <div class="field">
                         <label class="label">cantidad</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input class="input is-success" type="number" placeholder="cantidad" value="cuantos">
+                            <input id="cantidad" class="input is-success" type="number" placeholder="cantidad" value="">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-user"></i>
                             </span>
@@ -66,7 +80,7 @@
                     <div class="field">
                         <label class="label">metodo de pago</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input class="input is-success" type="text" placeholder="visa?" value="cual">
+                            <input id="met_pago" class="input is-success" type="text" placeholder="visa?" value="cual">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-user"></i>
                             </span>
@@ -79,7 +93,7 @@
                     <div class="field">
                         <label class="label">pago</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input class="input is-success" type="text" placeholder="opcion" value="si o no">
+                            <input id="valor_cancelar" class="input is-success" type="text" placeholder="opcion" value="si o no">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-user"></i>
                             </span>
@@ -92,7 +106,7 @@
                     <div class="field">
                         <label class="label">telefono</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input class="input is-success" type="number" placeholder="xxxxxxxxx" value="xxxxxxxxx">
+                            <input id="telefono" class="input is-success" type="number" placeholder="xxxxxxxxx" value="xxxxxxxxx">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-user"></i>
                             </span>
@@ -123,11 +137,12 @@
                     </div>
                 </nav>
                  <a href="/Programaci-nProcedimental-/restaurante/index.html"><button class="button">volver al inicio</button></a>
+                 <button class="button" id="guardar" onclick="validarInformacion()">guardar</button>
             </div>
         </article>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../js/pedidos.js"></script>
+    <script src="../js/pedido.js"></script>
 </body>
 
 </html>

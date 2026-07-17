@@ -8,6 +8,7 @@
     <link rel="stylesheet" 
     href="../../restaurante/css/inventario.css">
     <title>Invent</title>
+    <script src="../../restaurante/js/inventario.js"></script>
 </head>
 
 <body>
@@ -19,14 +20,14 @@
                     <div class="field">
                         <label class="label">FORMULARIO</label>
                         <div class="control">
-                            <input class="input" type="text" placeholder="Codigo Producto">
+                            <input id="cod_producto"class="input" type="text" placeholder="Codigo Producto">
                         </div>
                     </div>
 
                     <div class="field">
                         <label class="label">Nombre Producto</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input class="input is-success" type="text" placeholder="Text input" value="arroz">
+                            <input id="name_producto" class="input is-success" type="text" placeholder="Text input" value="arroz">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-user"></i>
                             </span>
@@ -40,7 +41,7 @@
                     <div class="field">
                         <label class="label">Cantidad de producto</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input class="input is-success" type="number" placeholder="Number Input" value="0000">
+                            <input id="cant_producto" class="input is-success" type="number" placeholder="Number Input" value="0000">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-envelope"></i>
                             </span>
@@ -54,7 +55,7 @@
                     <div class="field">
                         <label class="label">Descripcion Producto</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input class="input is-success" type="text" placeholder="Text input" value="arroz quemado">
+                            <input id="descripcion_producto" class="input is-success" type="text" placeholder="Text input" value="arroz quemado">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-user"></i>
                             </span>
@@ -67,7 +68,7 @@
                     <div class="field">
                         <label class="label">Marca Producto</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input class="input is-success" type="text" placeholder="Text input" value="ROA">
+                            <input id="marca_producto" class="input is-success" type="text" placeholder="Text input" value="ROA">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-user"></i>
                             </span>
@@ -81,7 +82,7 @@
                     <div class="field">
                         <label class="label">Valor Unitario</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input class="input is-success" type="number" placeholder="number input" value="0000">
+                            <input id="valor_uni" class="input is-success" type="number" placeholder="number input" value="0000">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-user"></i>
                             </span>
@@ -97,7 +98,7 @@
                     <div class="field">
                         <label class="label">Categoria Producto</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input class="input is-success" type="text" placeholder="text input" value="grano">
+                            <input id="categoria_producto" class="input is-success" type="text" placeholder="text input" value="grano">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-user"></i>
                             </span>
@@ -111,7 +112,7 @@
                     <div class="field">
                         <label class="label">Ubicacion Producto</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input class="input is-success" type="text" placeholder="text input" value="izquierda">
+                            <input id="ubi_producto" class="input is-success" type="text" placeholder="text input" value="izquierda">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-user"></i>
                             </span>
@@ -143,6 +144,7 @@
                     </div>
                 </nav>
                  <a href="/Programaci-nProcedimental-/restaurante/index.html"><button class="button">volver al inicio</button></a>
+                 <button class="button" id="guardar">guardar</button>
             </div>
         </article>
     </div>
