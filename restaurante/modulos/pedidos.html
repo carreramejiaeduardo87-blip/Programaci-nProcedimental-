@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" />
     <link rel="stylesheet" href="../../restaurante/css/pedidos.css">
     <script src="../../restaurante/js/pedido.js"></script>
-    
+
     <title>pedidos</title>
 </head>
 
@@ -23,10 +23,38 @@
                             <input id="producto" class="input" type="text" placeholder="cuant?">
                         </div>
                     </div>
+
+
+                    <div class="field">
+                        <label class="label">nombre producto</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="name_producto" class="input is-success" placeholder="nombre">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </div>
+                    </div>
+
                     <div class="field">
                         <label class="label">codigo producto</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input  id="cod_producto" class="input is-success" type="number" placeholder="codigo" value="">
+                            <input id="cod_producto" class="input is-success" type="number" placeholder="codigo">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">codigo producto</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="cod_producto" class="input is-success" type="number" placeholder="codigo">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-user"></i>
                             </span>
@@ -39,7 +67,7 @@
                     <div class="field">
                         <label class="label">direccion</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input id="direccion" class="input is-success" type="text" placeholder="direccion" value="">
+                            <input id="direccion" class="input is-success" type="text" placeholder="direccion">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-user"></i>
                             </span>
@@ -53,7 +81,7 @@
                     <div class="field">
                         <label class="label">nombre de usuario</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input id="name_usuario" class="input is-success" type="text" placeholder="alfredo.10" value="******">
+                            <input id="name_usuario" class="input is-success" type="text" placeholder="alfredo.10">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-envelope"></i>
                             </span>
@@ -67,7 +95,7 @@
                     <div class="field">
                         <label class="label">cantidad</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input id="cantidad" class="input is-success" type="number" placeholder="cantidad" value="">
+                            <input id="cantidad" class="input is-success" type="number" placeholder="cantidad">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-user"></i>
                             </span>
@@ -80,7 +108,7 @@
                     <div class="field">
                         <label class="label">metodo de pago</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input id="met_pago" class="input is-success" type="text" placeholder="visa?" value="cual">
+                            <input id="met_pago" class="input is-success" type="text" placeholder="visa?">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-user"></i>
                             </span>
@@ -93,7 +121,7 @@
                     <div class="field">
                         <label class="label">pago</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input id="valor_cancelar" class="input is-success" type="text" placeholder="opcion" value="si o no">
+                            <input id="valor_cancelar" class="input is-success" type="text" placeholder="opcion">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-user"></i>
                             </span>
@@ -106,7 +134,7 @@
                     <div class="field">
                         <label class="label">telefono</label>
                         <div class="control has-icons-left has-icons-right">
-                            <input id="telefono" class="input is-success" type="number" placeholder="xxxxxxxxx" value="xxxxxxxxx">
+                            <input id="telefono" class="input is-success" type="number" placeholder="xxxxxxxxx">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-user"></i>
                             </span>
@@ -117,32 +145,32 @@
                     </div>
 
 
-                <nav class="level is-mobile">
-                    <div class="level-left">
-                        <a class="level-item" aria-label="reply">
-                            <span class="icon is-small">
-                                <i class="fas fa-reply" aria-hidden="true"></i>
-                            </span>
-                        </a>
-                        <a class="level-item" aria-label="retweet">
-                            <span class="icon is-small">
-                                <i class="fas fa-retweet" aria-hidden="true"></i>
-                            </span>
-                        </a>
-                        <a class="level-item" aria-label="like">
-                            <span class="icon is-small">
-                                <i class="fas fa-heart" aria-hidden="true"></i>
-                            </span>
-                        </a>
-                    </div>
-                </nav>
-                 <a href="/Programaci-nProcedimental-/restaurante/index.html"><button class="button">volver al inicio</button></a>
-                 <button class="button" id="guardar" onclick="validarInformacion()">guardar</button>
-            </div>
+                    <nav class="level is-mobile">
+                        <div class="level-left">
+                            <a class="level-item" aria-label="reply">
+                                <span class="icon is-small">
+                                    <i class="fas fa-reply" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                            <a class="level-item" aria-label="retweet">
+                                <span class="icon is-small">
+                                    <i class="fas fa-retweet" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                            <a class="level-item" aria-label="like">
+                                <span class="icon is-small">
+                                    <i class="fas fa-heart" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </nav>
+                    <a href="/Programaci-nProcedimental-/restaurante/index.html"><button class="button">volver al
+                            inicio</button></a>
+                    <button class="button" id="guardar" type="button">guardar</button>
+                </div>
         </article>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../js/pedido.js"></script>
 </body>
-
 </html>
